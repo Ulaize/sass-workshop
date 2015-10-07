@@ -1,1 +1,10 @@
-// write your code here
+@import "lib";
+
+
+.main-title{
+    @include rounded-corner-box(8px, , 0px,pink);
+}
+ with a 6-pixel blue-ish border and a pink-ish drop shadow. Experiment with hsl to find some nice colors!
+.kitty-pic{
+    @include rounded(#9DBAD7, #FED4DE, 6px);
+}

@@ -1,0 +1,18 @@
+@import "lib";
+
+
+.main-title{
+    @include rounded-corner-box(8px, rgba(255, 255, 255, 0), 0px,pink);
+}
+
+.kitty-pic{
+    @include rounded(#9DBAD7, #FED4DE, 6px);
+}
+
+.featured{
+    @include rounded-corner-box(5px, black, 4px,teal);
+}
+
+.author-image{
+    @include rounded(rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), 0px);
+}
