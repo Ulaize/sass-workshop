@@ -1,1 +1,78 @@
 // write your code here
+
+$color-font1: #212121;
+$color-font2:#EC1561;
+$accent:#EC1561;
+$accent-hover:#EE749B;
+
+@mixin titles($color:$color-font1,$font-family:sans-serif) {
+    font-family:$font-family;
+    font-weight:light;
+    font-size:2em;
+}
+
+.main-header {
+    color:white; 
+    text-align:center;
+    background-color:$accent;
+    @include titles(white);
+    overflow:hidden;
+    &__title{
+        font-family:cursive;
+    }
+
+    
+}
+
+.article{
+    font-family:sans-serif;
+    
+    &__title{
+        @include titles;
+    }
+    &__featured-image{
+        width:100%;
+    }
+}
+
+a{
+    color:$accent;
+    text-decoration:none;
+    &:hover{
+        color:$accent-hover;
+    }
+}
+
+aside{
+  
+    display:flex;
+    align-items:center;
+    
+    .author-info{
+        
+        &__container{
+            background-color:#EC1561;
+            border-radius:50%;
+            display:inline-block;
+            &__image{
+            border-radius:50%;
+            opacity: 1;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            &:hover{
+            	opacity: .5;
+            }
+        }
+            
+        }
+        
+        
+        &__text{
+            margin:10px;
+        }
+        
+    }
+    
+      
+}
+
